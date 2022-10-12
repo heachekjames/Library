@@ -9,13 +9,25 @@ const titleLabel = document.getElementById('title');
 const pagesLabel = document.getElementById('pages');
 
 
-function Book(title, id, isRead, pages) {
-    this.title = title;
-    this.id = id;
-    this.isRead = isRead;
-    this.pages = pages;
+// function Book(title, id, isRead, pages) {
+//     this.title = title;
+//     this.id = id;
+//     this.isRead = isRead;
+//     this.pages = pages;
     
+// }
+
+class Book {
+
+    constructor(title, id, isRead, pages) {
+        this.title = title;
+        this.id = id;
+        this.isRead = isRead;
+        this.pages = pages;
+    }
 }
+
+
 
 function addBookToLibrary() {
 
